@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/decorate.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decorate the frame</title>
+</head>
+
+<body>
+<!-- picture iside frame, ready to be decorated -->
+    <div class="main">
+        <div class="tray-pannel">
+            <div class="tray-container">
+                <img id="tray" 
+                src="images/tray.jpeg"
+                alt="sticker tray"> 
+
+                <div class="deco-sticker">
+                    <button id="plant" class="sticker-button button-plant"></button>
+                    <button id="flower" class="sticker-button button-flower"></button>
+                    <button id="loading" class="sticker-button button-loading"></button>
+                    <button id="kanataun" class="sticker-button button-kanataun"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="finalCanvas"
+                width="700"
+                height="2100">
+            </canvas>
+        </div>
+
+    </div>
+
+
+<!-- Done button -->
+<div class="buttons">
+    <button id="download">Download</button>
+    <button id="return">Return Home</button>
+</div>
+
+
+<script src="JS/decorate.js"></script>
+</body>
+
+
+    
+</html>

@@ -1,0 +1,48 @@
+    /* FONT ADD IN*/
+    @font-face {
+        font-family: 'Kingthings Organica';
+        src: url('../fonts/Kingthings Organica.ttf') format('truetype');
+
+    }
+
+        /* BG colour */
+    body{
+        background-color: #fffdf1;
+    }
+
+    .read-us{
+        /* position */
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        gap: 20px;
+        z-index: 1000;
+        transform: translateX(-50%);
+        height: 60px;
+
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+        /* button style */
+    button{
+        background-color: #FF5E70;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 15px;
+
+        /* font */
+        font-family: 'Kingthings Organica', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 1.3px;
+
+    }
+
+    button:hover{
+        scale: 1.1;
+    }

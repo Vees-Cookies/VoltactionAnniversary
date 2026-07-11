@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/camera.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Frame</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="camera-container">
+            <canvas id="finalCanvas" width="700" height="2100"></canvas>
+
+            <img id="photo-1" class="photo">
+            <img id="photo-2" class="photo">
+            <img id="photo-3" class="photo">
+            <img id="photo-4" class="photo">
+            <video id="video" autoplay playsinline muted></video>
+
+            <img id="frame" style="width: 240px; height: auto;">
+        </div>
+
+        <div class="select-option-photo">
+
+            <button id="select-take">Take Photo</button>
+            <button id="select-upload">Upload Photo</button>
+
+            <button id="capture-btn" style="display: none;">Capture</button>
+            <button id="done-btn" style="display: none;">Done</button>
+
+            <input
+                type="file"
+                id="uploadInput"
+                accept="image/*"
+                style="display: none;">
+
+        </div>
+    </div>
+
+<script src="JS/camera.js"></script>
+</body>
+
+
+    
+</html>

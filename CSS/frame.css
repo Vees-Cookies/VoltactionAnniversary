@@ -1,0 +1,84 @@
+    /* FONT ADD IN*/
+    @font-face {
+        font-family: 'Kingthings Organica';
+        src: url('../fonts/Kingthings Organica.ttf') format('truetype');
+
+    }
+
+        /* BG colour */
+    body{
+        background-color: #fffdf1;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        width: 100%;
+        font-family: 'Kingthings Organica', sans-serif;
+        font-size: 55px;
+        color: #FF5E70;
+/*         
+        -webkit-text-stroke: 2px #FF5E70; */
+    }
+
+    .frame-option-selection{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .frame-img{
+        border: 4px solid trasparent;
+        border-radius: 10px;
+        transition: border-color 0.3s ease;
+    }
+
+    .frame-img:hover {
+    transform: scale(1.02);
+    }
+    
+    .frame-img:active{
+        border-color: #FF5E70;
+        box-shadow: 0 0 12px rgba(255, 94, 126, 0.5);
+        transform: scale(1.03);
+    }
+
+    /* button style */
+    .frame-select{
+        /* position */
+        position: flex;
+        gap: 20px;
+        height: 60px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* button style */
+    button{
+        background-color: #FF5E70;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 15px;
+
+        /* font */
+        font-family: 'Kingthings Organica', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 1.3px;
+
+    }
+
+    button:hover{
+        scale: 1.1;
+    }
