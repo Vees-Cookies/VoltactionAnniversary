@@ -5,9 +5,9 @@ console.log("Selected frame:", selectedFrame);
 const frameImage = document.getElementById("frame");
 
 if (selectedFrame === "voltaction-1") {
-    frameImage.src = "images/Voltaction Design 1.png";
+    frameImage.src = "Images/Voltaction Design 1.png";
 } else if (selectedFrame === "voltaction-2") {
-    frameImage.src = "images/Voltaction Design 2.png";
+    frameImage.src = "Images/Voltaction Design 2.png";
 } else {
     console.log("No matching frame.");
 }
