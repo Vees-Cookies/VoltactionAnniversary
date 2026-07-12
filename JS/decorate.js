@@ -10,6 +10,8 @@ const canvas = document.getElementById("finalCanvas"),
     add06btn = document.getElementById("06"),
     add07btn = document.getElementById("07"),
     add08btn = document.getElementById("08"),
+    add09btn = document.getElementById("09"),
+    add10btn = document.getElementById("10"),
     downBtn = document.getElementById("download"),
     returnbtn = document.getElementById("return");
 
@@ -39,8 +41,8 @@ function addsticker(src){
             img,
             x: Width/2 - 40,
             y: height/2 -40,
-            width: 310,
-            height: 310,
+            width: 270,
+            height: 270,
             dragging: false
         });
         drawCanvas();
@@ -110,6 +112,8 @@ add05btn.addEventListener("click", ()=>addsticker("Images/sticker-05.png"));
 add06btn.addEventListener("click", ()=>addsticker("Images/sticker-06.png"));
 add07btn.addEventListener("click", ()=>addsticker("Images/sticker-07.png"));
 add08btn.addEventListener("click", ()=>addsticker("Images/sticker-08.png"));
+add09btn.addEventListener("click", ()=>addsticker("Images/sticker-09.png"));
+add10btn.addEventListener("click", ()=>addsticker("Images/sticker-10.png"));
 
 downBtn.addEventListener('click', () => {
     drawCanvas();
