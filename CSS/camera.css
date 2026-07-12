@@ -151,3 +151,45 @@
         pointer-events: none;
         z-index: 3;
     }
+
+     @media screen and (max-width:600px){
+        body{
+            margin: 0;
+            padding: 15px 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 100%;
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .camera-container{
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 240px;
+            position: relative;
+            
+        }
+        #frame {
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+            transform: none; 
+    }
+
+        .select-option-photo{
+            margin-top: -50px;
+            /* width: 180px;  */
+            gap: 10px;
+            z-index: 10;
+        }
+    }
