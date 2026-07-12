@@ -156,4 +156,7 @@
         transform: translateX(-50%);
         z-index: 1000;
     }
+    .text p {
+        margin: 0 0 6px 0; /* Shrinks space between paragraphs on small screens */
+    }
 }
