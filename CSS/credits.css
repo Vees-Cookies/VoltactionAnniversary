@@ -1,0 +1,150 @@
+@font-face {
+        font-family: 'Kingthings Organica';
+        src: url('../fonts/Kingthings Organica.ttf') format('truetype');
+
+    }
+
+      @font-face {
+        font-family: 'FredokaOne';
+        src: url('../fonts/FredokaOne-Regular.ttf') format('truetype');
+
+    }
+
+        /* BG colour */
+    body{
+        background-color: #fffdf1;
+    }
+    
+    h1{
+        font-family: "Kingthings Organica";
+        font-size: 72px;
+        color: #FF5E70;
+        text-align: center;
+    } 
+
+     .return{
+        /* position */
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        gap: 20px;
+        z-index: 1000;
+        transform: translateX(-50%);
+        height: 60px;
+
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .credits-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .credits-vees{
+        position: relative;
+        width: 460pxs;
+    }
+    .credits-vees img{
+        width: 450px;
+        height:auto;
+        display:block;
+    }
+
+    .credits-fey{
+        position: relative;
+        width: 460px;
+    }
+    .credits-fey img{
+        width: 450px;
+        height:auto;
+        display:block;
+    }
+
+    .credits-mizu{
+        position: relative;
+        width: 460px;
+    }
+    .credits-mizu img{
+        width: 450px;
+        height:auto;
+        display:block;
+    }
+
+    .text-vees{
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 75%;
+        text-align: center;
+
+        color: #080808;
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: "FredokaOne"
+    }
+
+       .text-fey{
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 75%;
+        text-align: center;
+
+        color: #080808;
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: "FredokaOne"
+    }
+
+       .text-mizu{
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 75%;
+        text-align: center;
+
+        color: #080808;
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: "FredokaOne"
+    }
+    
+        /* button style */
+    button{
+        background-color: #FF5E70;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 15px;
+
+        /* font */
+        font-family: 'Kingthings Organica', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 1.3px;
+
+    }
+
+    button:hover{
+        scale: 1.1;
+    }
+
+     @media screen and (max-width:660px){
+        body{
+            min-height: 100vh;
+            margin: 0;
+        }
+
+    }
