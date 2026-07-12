@@ -13,3 +13,8 @@ function handleReadUsButtonClick() {
 readUsButton.addEventListener("click", handleReadUsButtonClick);
 
 
+const creditsButton = document.getElementById("credit-button");
+function handlecreditsButtonClick() {
+    window.location.href = "credits.html";
+}
+creditsButton.addEventListener("click", handlecreditsButtonClick);
