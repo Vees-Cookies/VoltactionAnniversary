@@ -31,7 +31,7 @@
         width: 100%;
 
         /* turnoff later */
-        /* border: 3px solid green !important; */
+        border: 3px solid rgb(128, 0, 62) !important;
     }
 
     .canvas-container{
@@ -39,7 +39,7 @@
 
         margin-left: -50px;
         /* turnoff later */
-        /* border: 3px solid green !important; */
+        border: 3px solid rgb(140, 32, 190) !important;
     }
     
     #finalCanvas{
@@ -59,7 +59,7 @@
         margin-left: -80px;
 
         /* turnoff later */
-        /* border: 3px solid green !important; */
+        border: 3px solid green !important;
     }
 
     .tray-container{
@@ -84,7 +84,7 @@
         margin-left: -80px;
 
         /* turn off later */
-        /* border: 3px solid green !important; */
+        border: 3px solid rgb(23, 0, 128) !important;
     }
 
     .deco-sticker{
@@ -201,4 +201,51 @@
             margin-bottom: 10px;
             text-align: center;
         }
-        
+
+        .main{
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tray-pannel{
+            width: 100%;
+            height: 240px;
+            margin-top: 0px;
+        }
+
+        .tray-container{
+            position: relative;
+            width: 380px;
+            height: 220px;
+            margin: 0;
+        }
+        #tray{
+            width: 360px;
+            height: auto;
+            margin: 0;
+
+            margin-left: 85px;
+
+            transform: rotate(90deg);
+            transform-origin: center;
+        }
+
+        .deco-sticker{
+            position: absolute;
+
+
+            height: 120px;
+            width: 240px; 
+
+            left: 112px;
+            top: 35px;
+            grid-auto-rows: 67px;
+
+        }
+
+        .sticker-button{
+            width: 65px;
+            height: 65px;
+
+        }
+    }
