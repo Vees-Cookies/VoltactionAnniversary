@@ -2,10 +2,14 @@ const Width = 700, height = 2100;
 
 const canvas = document.getElementById("finalCanvas"),
     ctx = canvas.getContext("2d"),
-    addplantbtn = document.getElementById("plant"),
-    addflowerbtn = document.getElementById("flower"),
-    addloadingbtn = document.getElementById("loading"),
-    addkanataunbtn = document.getElementById("kanataun"),
+    add01btn = document.getElementById("01"),
+    add02btn = document.getElementById("02"),
+    add03btn = document.getElementById("03"),
+    add04btn = document.getElementById("04"),
+    add05btn = document.getElementById("05"),
+    add06btn = document.getElementById("06"),
+    add07btn = document.getElementById("07"),
+    add08btn = document.getElementById("08"),
     downBtn = document.getElementById("download"),
     returnbtn = document.getElementById("return");
 
@@ -33,10 +37,10 @@ function addsticker(src){
     img.onload = () => {
         stickers.push({
             img,
-            x: Width/2 - img.width/4,
-            y: height/2 - img.height/4,
-            width: img.width/2.5,
-            height: img.height/2.5,
+            x: Width/2 - 40,
+            y: height/2 -40,
+            width: 310,
+            height: 310,
             dragging: false
         });
         drawCanvas();
@@ -98,11 +102,14 @@ canvas.addEventListener('touchmove', pointerMove);
 canvas.addEventListener('touchend', pointerUp);
 canvas.addEventListener('touchcancel', pointerUp);
 
-addkanataunbtn.addEventListener("click", ()=> addsticker("Images/sticker-kanataun.png"));
-addflowerbtn.addEventListener("click", ()=> addsticker("Images/sticker-flower.png"));
-addloadingbtn.addEventListener("click", ()=>addsticker("Images/sticker-loading.png"));
-addplantbtn.addEventListener("click", ()=>addsticker("Images/sticker-plant.png"));
-
+add04btn.addEventListener("click", ()=> addsticker("Images/sticker-04.png"));
+add02btn.addEventListener("click", ()=> addsticker("Images/sticker-02.png"));
+add03btn.addEventListener("click", ()=>addsticker("Images/sticker-03.png"));
+add01btn.addEventListener("click", ()=>addsticker("Images/sticker-01.png"));
+add05btn.addEventListener("click", ()=>addsticker("Images/sticker-05.png"));
+add06btn.addEventListener("click", ()=>addsticker("Images/sticker-06.png"));
+add07btn.addEventListener("click", ()=>addsticker("Images/sticker-07.png"));
+add08btn.addEventListener("click", ()=>addsticker("Images/sticker-08.png"));
 
 downBtn.addEventListener('click', () => {
     drawCanvas();

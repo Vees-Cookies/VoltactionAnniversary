@@ -71,6 +71,8 @@
         justify-content: center;
         flex-shrink: 0;
         margin-right: 100px;
+
+  
     }
 
     #tray{
@@ -87,29 +89,35 @@
 
     .deco-sticker{
         position: absolute;
-        top: 5px;
-        left: 86px;
+        top: 75px;
+        left: 26px;
 
-        width: 120px;
-        height: 500px;
+        width: 240px;
+        height: 440px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 90px;
+
         justify-content: center;
-        padding-top: 25px;
+        align-content: start;
+
+        padding-top: 10px;
+
+        column-gap: -10px;
+        row-gap: -10px;
 
         gap: 5px;
         overflow-y: auto;
         overflow-x: hidden;
 
         /* turn off later */
-        /* border: 3px solid red !important; */
+        border: 3px solid red !important;
     }
 
     .sticker-button {
-        width: 95px;
-        height: 95px;
+        width: 75px;
+        height: 75px;
 
         border: none;
         cursor: pointer;
@@ -120,17 +128,22 @@
         background-size: contain;
 
         padding: 0;
+        flex-shrink: 0;
 
         /* turnoff later */
         border: 3px solid rgb(66, 66, 99) !important;
         background-color: rgba(0, 0, 255, 0.1) !important;
     }
 
-    .button-plant {background-image: url("../Images/sticker-plant.png");}
-    .button-flower {background-image: url("../Images/sticker-flower.png");}
-    .button-loading {background-image: url("../Images/sticker-loading.png");}
-    .button-kanataun {background-image: url("../Images/sticker-kanataun.png");}
-    
+    .button-01 {background-image: url("../Images/sticker-01.png");}
+    .button-02 {background-image: url("../Images/sticker-02.png");}
+    .button-03 {background-image: url("../Images/sticker-03.png");}
+    .button-04 {background-image: url("../Images/sticker-04.png");}
+    .button-05 {background-image: url("../Images/sticker-05.png");}
+    .button-06 {background-image: url("../Images/sticker-06.png");}
+    .button-07 {background-image: url("../Images/sticker-07.png");}
+    .button-08 {background-image: url("../Images/sticker-08.png");}
+
     /* Maintain your hover zoom effect */
     .sticker-button:hover {
         transform: scale(1.1);
