@@ -53,7 +53,7 @@ function drawCanvas(){
     stickers.forEach(s => ctx.drawImage(s.img, s.x, s.y, s.width, s.height));
 }
 
-function addsticker(src){
+function addsticker(src, width=270, height=270){
     const img = new Image();
     img.src = src;
     img.onload = () => {
@@ -61,8 +61,8 @@ function addsticker(src){
             img,
             x: Width/2 - 40,
             y: height/2 -40,
-            width: 270,
-            height: 270,
+            width,
+            height,
             dragging: false
         });
         drawCanvas();
@@ -132,8 +132,8 @@ add05btn.addEventListener("click", ()=>addsticker("Images/sticker-05.png"));
 add06btn.addEventListener("click", ()=>addsticker("Images/sticker-06.png"));
 add07btn.addEventListener("click", ()=>addsticker("Images/sticker-07.png"));
 add08btn.addEventListener("click", ()=>addsticker("Images/sticker-08.png"));
-add09btn.addEventListener("click", ()=>addsticker("Images/sticker-09.png"));
-add10btn.addEventListener("click", ()=>addsticker("Images/sticker-10.png"));
+add09btn.addEventListener("click", ()=>addsticker("Images/sticker-09.png", 170, 170));
+add10btn.addEventListener("click", ()=>addsticker("Images/sticker-10.png", 170, 170));
 add11btn.addEventListener("click", ()=>addsticker("Images/sticker-11.png"));
 add12btn.addEventListener("click", ()=>addsticker("Images/sticker-12.png"));
 add13btn.addEventListener("click", ()=>addsticker("Images/sticker-13.png"));
@@ -141,9 +141,9 @@ add14btn.addEventListener("click", ()=>addsticker("Images/sticker-14.png"));
 add15btn.addEventListener("click", ()=>addsticker("Images/sticker-15.png"));
 add16btn.addEventListener("click", ()=>addsticker("Images/sticker-16.png"));
 add17btn.addEventListener("click", ()=>addsticker("Images/sticker-17.png"));
-add18btn.addEventListener("click", ()=>addsticker("Images/sticker-18.png"));
+add18btn.addEventListener("click", ()=>addsticker("Images/sticker-18.png", 170, 170));
 add19btn.addEventListener("click", ()=>addsticker("Images/sticker-19.png"));
-add20btn.addEventListener("click", ()=>addsticker("Images/sticker-20.png"));
+add20btn.addEventListener("click", ()=>addsticker("Images/sticker-20.png", 170, 170));
 add21btn.addEventListener("click", ()=>addsticker("Images/sticker-21.png"));
 add22btn.addEventListener("click", ()=>addsticker("Images/sticker-22.png"));
 add23btn.addEventListener("click", ()=>addsticker("Images/sticker-23.png"));
@@ -152,8 +152,8 @@ add25btn.addEventListener("click", ()=>addsticker("Images/sticker-25.png"));
 add26btn.addEventListener("click", ()=>addsticker("Images/sticker-26.png"));
 add27btn.addEventListener("click", ()=>addsticker("Images/sticker-27.png"));
 add28btn.addEventListener("click", ()=>addsticker("Images/sticker-28.png"));
-add29btn.addEventListener("click", ()=>addsticker("Images/sticker-29.png"));
-add30btn.addEventListener("click", ()=>addsticker("Images/sticker-30.png"));
+add29btn.addEventListener("click", ()=>addsticker("Images/sticker-29.png", 170, 170));
+add30btn.addEventListener("click", ()=>addsticker("Images/sticker-30.png", 170, 170));
 
 
 downBtn.addEventListener('click', () => {
