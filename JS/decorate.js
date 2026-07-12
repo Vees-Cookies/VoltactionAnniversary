@@ -12,6 +12,16 @@ const canvas = document.getElementById("finalCanvas"),
     add08btn = document.getElementById("08"),
     add09btn = document.getElementById("09"),
     add10btn = document.getElementById("10"),
+    add11btn = document.getElementById("11"),
+    add12btn = document.getElementById("12"),
+    add13btn = document.getElementById("13"),
+    add14btn = document.getElementById("14"),
+    add15btn = document.getElementById("15"),
+    add16btn = document.getElementById("16"),
+    add17btn = document.getElementById("17"),
+    add18btn = document.getElementById("18"),
+    add19btn = document.getElementById("19"),
+    add20btn = document.getElementById("20"),
     downBtn = document.getElementById("download"),
     returnbtn = document.getElementById("return");
 
@@ -114,6 +124,18 @@ add07btn.addEventListener("click", ()=>addsticker("Images/sticker-07.png"));
 add08btn.addEventListener("click", ()=>addsticker("Images/sticker-08.png"));
 add09btn.addEventListener("click", ()=>addsticker("Images/sticker-09.png"));
 add10btn.addEventListener("click", ()=>addsticker("Images/sticker-10.png"));
+add11btn.addEventListener("click", ()=>addsticker("Images/sticker-11.png"));
+add12btn.addEventListener("click", ()=>addsticker("Images/sticker-12.png"));
+add13btn.addEventListener("click", ()=>addsticker("Images/sticker-13.png"));
+add14btn.addEventListener("click", ()=>addsticker("Images/sticker-14.png"));
+add15btn.addEventListener("click", ()=>addsticker("Images/sticker-15.png"));
+add16btn.addEventListener("click", ()=>addsticker("Images/sticker-16.png"));
+add17btn.addEventListener("click", ()=>addsticker("Images/sticker-17.png"));
+add18btn.addEventListener("click", ()=>addsticker("Images/sticker-18.png"));
+add19btn.addEventListener("click", ()=>addsticker("Images/sticker-19.png"));
+add20btn.addEventListener("click", ()=>addsticker("Images/sticker-20.png"));
+add21btn.addEventListener("click", ()=>addsticker("Images/sticker-21.png"));
+
 
 downBtn.addEventListener('click', () => {
     drawCanvas();
