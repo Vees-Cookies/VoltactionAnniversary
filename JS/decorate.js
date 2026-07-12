@@ -33,6 +33,7 @@ const canvas = document.getElementById("finalCanvas"),
     add29btn = document.getElementById("29"),
     add30btn = document.getElementById("30"),
     downBtn = document.getElementById("download"),
+    undoBtn = document.getElementById("undo"),
     returnbtn = document.getElementById("return");
 
 canvas.width = Width;
@@ -170,6 +171,13 @@ downBtn.addEventListener('click', () => {
 
         URL.revokeObjectURL(a.href);
     }, `image/png`);
+});
+
+undoBtn.addEventListener("click", () => {
+    if (stickers.length > 0) {
+        stickers.pop();      // Remove the last sticker
+        drawCanvas();         // Redraw the canvas
+    }
 });
 
 returnbtn.addEventListener(

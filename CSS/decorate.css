@@ -90,9 +90,9 @@
     .deco-sticker{
         position: absolute;
         top: 75px;
-        left: 26px;
+        left: 20px;
 
-        width: 240px;
+        width: 260px;
         height: 440px;
 
         display: grid;
@@ -112,7 +112,7 @@
         overflow-x: hidden;
 
         /* turn off later */
-        border: 3px solid red !important;
+        /* border: 3px solid red !important; */
     }
 
     .sticker-button {
