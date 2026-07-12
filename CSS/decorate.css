@@ -241,6 +241,17 @@
             height: 220px;
             margin: 0;
         }
+
+         .canvas-container{
+            width: 240px;
+            margin-left: 20px;   /* move it right */
+        }
+
+        #finalCanvas{
+            display: block;
+            margin: 0 auto;
+        }
+
         #tray{
             width: 360px;
             height: auto;
@@ -269,4 +280,18 @@
             width: 65px;
             height: 65px;
         }
+        
+          .buttons{
+            width: calc(100% - 30px);
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 10px;
+    }
+
+        .buttons button{
+            flex: 1;
+            font-size: 18px;
+            padding: 12px 5px;
+        }
+
     }
