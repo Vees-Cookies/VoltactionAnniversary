@@ -97,37 +97,63 @@
         scale: 1.1;
     }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 790px) {
     body {
         padding: 15px;
-        height: fit-content;
+        height: 100vh;
+        overflow: hidden; /* kills the scroll */
+        box-sizing: border-box;
     }
 
-    .return{
-        position: relative;
+    .main-cont{
+        height: 100vh;
+        justify-content: flex-start;
     }
 
     h1 {
-        font-size: 48px; 
-        margin: 10px 0;
+        margin: 8px 0;
     }
 
-    .read-images img{
-        width: 650px;
+    .readus{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;   /* keeps image glued to bottom */
     }
-
 
     .read-images{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+    }
+
+    .read-images img{
+        width: auto;
+        height: 88vh;
+        max-height: 88vh;       /* image scales to fit, no more forced width */
+        object-fit: contain;
+        display: block;
     }
 
     /* Proportional adjustments to fit inner image text box */
     .text {
-        top: 56%;
+        top: 59%;
         width: 85%;
-        font-size: 10px; 
+        font-size: 11px;
         line-height: 1.4;
+    }
+
+    .return{
+        position: absolute;
+        bottom: 70px;            /* raise/lower this to place it where you want */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
     }
 }
