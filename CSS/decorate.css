@@ -6,7 +6,7 @@
     }
 
     body{
-        margin: 30px;
+        margin: 10px;
         background-color: #fffdf1;
 
         min-height: 100vh;
@@ -14,6 +14,12 @@
         flex-direction: column;
         justify-content: center; 
         align-items: center;
+    }
+
+    h1{
+        font-family: "Kingthings Organica";
+        font-size: 72px;
+        color: #FF5E70;
     }
 
     .main{
@@ -131,20 +137,76 @@
     
     @media screen and (max-width:600px){
         body{
-            margin: 10px;
-            padding: 15px 0;
-            height: 100vh;
+            margin: 0;
+            padding: 20px 10px 100px 10px;
+            min-height: 100vh;
+            height: auto;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
+
+        h1 {
+            font-family: 'Kingthings Organica', sans-serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         .main{
             width: 100%;
-            min-width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
         }
+
+        .tray-pannel{
+            width: 100%;
+            justify-content: center;
+        }
+
+        .tray-container{
+            margin-top: 0;
+            transform: none;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #tray{
+            transform: rotate(90deg);
+            
+        }
+
+        .deco-sticker{
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;          
+            overflow-y: hidden;       
+            white-space: nowrap;
+
+            top: 12px;
+            left: 20px;
+            right: 20px;
+            bottom: 12px;
+            width: auto;
+            height: auto;
+            
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sticker-button {
+            flex-shrink: 0;
+            width: 75px;             
+            height: 75px;
+        }
+
+        .canvas-container{
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+        }
+
         }
