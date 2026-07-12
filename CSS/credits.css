@@ -76,14 +76,14 @@
 
     .text-vees{
         position: absolute;
-        top: 68%;
+        top: 69%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         width: 75%;
         text-align: center;
 
-        color: #080808;
+        color: #FF5E70;
         font-size: 14px;
         line-height: 1.6;
         font-family: "FredokaOne"
@@ -91,14 +91,14 @@
 
        .text-fey{
         position: absolute;
-        top: 68%;
+        top: 69%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         width: 75%;
         text-align: center;
 
-        color: #080808;
+        color: #FF5E70;
         font-size: 14px;
         line-height: 1.6;
         font-family: "FredokaOne"
@@ -106,14 +106,14 @@
 
        .text-mizu{
         position: absolute;
-        top: 68%;
+        top: 69%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         width: 75%;
         text-align: center;
 
-        color: #080808;
+        color: #FF5E70;
         font-size: 14px;
         line-height: 1.6;
         font-family: "FredokaOne"
@@ -146,5 +146,16 @@
             min-height: 100vh;
             margin: 0;
         }
+        .credits-cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
 
+        .credits-vees,
+        .credits-fey,
+        .credits-mizu {
+            margin: 0;
+            padding: 0;}
     }
