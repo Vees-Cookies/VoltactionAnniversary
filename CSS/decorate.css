@@ -38,6 +38,12 @@
         width: 240px;
 
         margin-left: -50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
         /* turnoff later */
         /* border: 3px solid rgb(140, 32, 190) !important; */
     }
@@ -195,17 +201,19 @@
 
     .buttons{
         /* position */
-        position: fixed;
+        /* position: fixed;
         bottom: 10px;
         left: 50%;
         gap: 25px;
         z-index: 1000;
-        transform: translateX(-50%);
-        height: 60px;
-
-        display : flex;
+        transform: translateX(-50%); */
+        display: flex;
         justify-content: center;
         align-items: center;
+        gap: 25px;
+        height: 60px;
+        width: 100%;
+        margin-top: 20px;
     }
 
     button{
@@ -227,6 +235,16 @@
 
     button:hover{
         transform: scale(1.1);
+    }
+
+   .buttons{
+    /* remove: position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); */
+        gap: 25px;
+        height: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     @media screen and (max-width:600px){
@@ -303,10 +321,10 @@
             height: 65px;
         }
         
-          .buttons{
+        .buttons{
             width: calc(100% - 30px);
             left: 50%;
-            transform: translateX(-50%);
+            /* transform: translateX(-50%); */
             gap: 10px;
     }
 

@@ -145,12 +145,17 @@
         body{
             min-height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
-        .credits-cont{
+
+        
+
+        .credits-cont{  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            
         }
 
         .credits-vees,
