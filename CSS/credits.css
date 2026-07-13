@@ -145,9 +145,12 @@
         body{
             min-height: 100vh;
             margin: 0;
-            overflow: hidden;
+            /* overflow: hidden; */
         }
-
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
         
 
         .credits-cont{  
