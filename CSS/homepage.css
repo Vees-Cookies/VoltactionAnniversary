@@ -32,8 +32,9 @@
         bottom: 0;
 
         width: 100vw;
-        height: 100vh;
+        height: 110vh;
         z-index: -1;
+
         overflow: hidden;
         justify-content: center;
         align-items: flex-start;
